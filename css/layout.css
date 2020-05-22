@@ -1,3 +1,23 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 200px) minmax(300px, 1100px) 1fr;
+  grid-template-areas: "hd hd hd hd" "... nv mn ...";
+  grid-template-rows: min-content;
+}
 
+header {
+  grid-area: hd;
+  padding: 1em;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2em;
+}
+
+nav {
+  grid-area: nv;
+}
+
+main {
+  grid-area: mn;
+}
 
 /*# sourceMappingURL=layout.css.map */
