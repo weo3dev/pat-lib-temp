@@ -246,20 +246,65 @@ summary {
   --patlib-higherlight: #EFF;
   --brand-white: #fefefe;
   --brand-black: #232323;
-  --brand-primary: #369;
-  --brand-secondary: #FA0;
-  --brand-warning: #EC3;
-  --brand-error: #D30;
-  --brand-success: #593;
-  --functional-peppercorn: #241C15;
+  --brand-primary: #2FBF8E;
+  --brand-secondary: #3AE2AA;
+  --brand-magicmint: #AFF1DA;
+  --brand-gossip: #DEF9BA;
+  --brand-pearl: #F6F6F6;
+  --brand-silver: #C4C4C4;
+  --brand-tundora: #474747;
 }
 
 .text-color-white {
-  color: var(--standard-white);
+  color: var(--brand-white);
 }
 
-.background-color-peppercorn {
-  background-color: var(--functional-peppercorn);
+.text-color-black {
+  color: var(--brand-black);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.text-color-secondary {
+  color: var(--brand-secondary);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.bg-color-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-color-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.bg-color-magicmint {
+  background-color: var(--brand-magicmint);
+}
+
+.bg-color-gossip {
+  background-color: var(--brand-gossip);
+}
+
+.bg-color-pearl {
+  background-color: var(--brand-pearl);
+}
+
+.bg-color-silver {
+  background-color: var(--brand-silver);
+}
+
+.bg-color-tundora {
+  background-color: var(--brand-tundora);
 }
 
 body {
@@ -277,7 +322,7 @@ header {
   margin-bottom: 2em;
 }
 
-nav {
+nav[aria-label=Primary] {
   grid-area: nv;
   display: grid;
   grid-template-rows: repeat(2, 4em min-content);
@@ -291,12 +336,12 @@ main {
 }
 
 h1 {
-  font-family: "Cooper Light", Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
   font-weight: 500;
-  line-height: 1;
+  line-height: 0.8;
   font-size: 3rem;
   text-transform: capitalize;
-  word-spacing: -0.2rem;
+  font-variant: small-caps;
   margin: 0;
   align-self: end;
 }
@@ -315,18 +360,20 @@ nav ul {
   list-style-type: none;
 }
 nav ul li a {
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 0.2rem;
   text-decoration: none;
   color: var(--patlib-black);
   background: transparent;
   display: block;
+  border-bottom: 4px double transparent;
+  margin: 0.25rem 0;
 }
 nav ul li a:hover {
-  background: var(--patlib-higherlight);
+  border-bottom: 4px double #ddd;
 }
 nav ul li.selected a {
-  background: var(--patlib-highlight);
+  border-bottom: 4px double #999;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,12 +6,6 @@ This is a boilerplate for a site patterns, layout, components, and brand colors,
 
 ## Requirements
 * Sass
-* A brain
-* Some coffee
-* Or beer
-* Time
-* Electricity
-* Working computer
 
 
 ## Use
