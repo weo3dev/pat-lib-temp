@@ -1,6 +1,11 @@
 :root {
   --standard-white: #fff;
   --standard-black: #000;
+  --patlib-black: #343434;
+  --patlib-white: #fafafa;
+  --patlib-primary: #369;
+  --patlib-highlight: #DEF;
+  --patlib-higherlight: #EFF;
   --brand-white: #fefefe;
   --brand-black: #232323;
   --brand-primary: #369;
@@ -8,6 +13,15 @@
   --brand-warning: #EC3;
   --brand-error: #D30;
   --brand-success: #593;
+  --functional-peppercorn: #241C15;
+}
+
+.text-color-white {
+  color: var(--standard-white);
+}
+
+.background-color-peppercorn {
+  background-color: var(--functional-peppercorn);
 }
 
 /*# sourceMappingURL=settings.css.map */

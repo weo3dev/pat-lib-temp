@@ -1,0 +1,22 @@
+.color-listing {
+  display: grid;
+  grid-template-columns: minmax(min-content, 50%) 1fr;
+  grid-template-rows: 3em 1fr;
+  grid-template-areas: "name ..." "hex contrast";
+  padding: 1em;
+  border-radius: 8px;
+  margin: 1em 0;
+}
+.color-listing p {
+  grid-area: name;
+}
+.color-listing pre {
+  grid-area: hex;
+  margin: 0;
+}
+.color-listing table {
+  grid-area: contrast;
+  min-width: 380px;
+}
+
+/*# sourceMappingURL=color.css.map */
