@@ -1,0 +1,76 @@
+:root {
+  --standard-white: #fff;
+  --standard-black: #000;
+  --patlib-black: #343434;
+  --patlib-white: #fafafa;
+  --patlib-primary: #369;
+  --patlib-highlight: #DEF;
+  --patlib-higherlight: #EFF;
+  --brand-white: #fefefe;
+  --brand-black: #232323;
+  --brand-primary: #2FBF8E;
+  --brand-secondary: #3AE2AA;
+  --brand-magicmint: #AFF1DA;
+  --brand-gossip: #DEF9BA;
+  --brand-pearl: #F6F6F6;
+  --brand-silver: #C4C4C4;
+  --brand-tundora: #474747;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-color-white {
+  color: var(--brand-white);
+}
+
+.text-color-black {
+  color: var(--brand-black);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.text-color-secondary {
+  color: var(--brand-secondary);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.text-color-primary {
+  color: var(--brand-primary);
+}
+
+.bg-color-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-color-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.bg-color-magicmint {
+  background-color: var(--brand-magicmint);
+}
+
+.bg-color-gossip {
+  background-color: var(--brand-gossip);
+}
+
+.bg-color-pearl {
+  background-color: var(--brand-pearl);
+}
+
+.bg-color-silver {
+  background-color: var(--brand-silver);
+}
+
+.bg-color-tundora {
+  background-color: var(--brand-tundora);
+}
+
+/*# sourceMappingURL=grid.css.map */
