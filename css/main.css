@@ -255,6 +255,10 @@ summary {
   --brand-tundora: #474747;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-color-white {
   color: var(--brand-white);
 }
@@ -332,7 +336,7 @@ main {
   grid-area: mn;
   display: grid;
   grid-template-rows: 4em 1fr;
-  grid-row-gap: 2em;
+  grid-row-gap: 4em;
 }
 
 h1,
@@ -419,6 +423,12 @@ nav[aria-label=Secondary] ul li a {
 }
 nav[aria-label=Secondary] ul li a:hover {
   border-bottom: 4px double #999;
+}
+
+.CodeMirror {
+  height: auto !important;
+  margin: 2em 0;
+  border: 1px solid #dedddc;
 }
 
 /*# sourceMappingURL=main.css.map */

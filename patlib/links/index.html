@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Library :: Links</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/components/button.css">
+
+  <script src="/vendor/codemirror/lib/codemirror.js"></script>
+
+  <link rel="stylesheet" href="../../vendor/codemirror/lib/codemirror.css">
+
+  <script src="/vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="/vendor/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+  <script src="/js/patlib.js"></script>
+
+</head>
+<body>
+  
+
+    <header>header header bo bedder bedder banana fana fo fedder fee fie mo medder. cake.</header>
+    <nav aria-label="Primary">
+      <h3>Foundations</h3>
+      <ul>
+          <li class="selected">
+              <a href="/" title="Introduction">Introduction</a>
+          </li>            
+          <li>
+              <a href="/patlib/color" title="Color">Color</a>
+          </li>
+          <li>
+              <a href="/patlib/typography" title="Typography">Typography</a>
+          </li>
+          <li>
+              <a href="/patlib/grid" title="Grid System">Grid System</a>
+          </li>            
+      </ul>
+      <h3>Components</h3>
+      <ul class="regular padding--lv3">
+          <li>
+              <a href="/patlib/buttons" title="Buttons">Buttons</a>
+          </li>
+          <li>
+              <a href="/patlib/links" title="Links">Links</a>
+          </li>
+          <li>
+              <a href="/patlib/feedback" title="Feedback">Feedback</a>
+          </li>
+          <li>
+              <a href="/patlib/forms" title="Form Elements">Form Elements</a>
+          </li>
+          <li>
+              <a href="/patlib/helpers" title="Helper Classes">Helper Classes</a>
+          </li>
+          <li>
+              <a href="/patlib/lists" title="Lists">Lists</a>
+          </li>
+          <li>
+              <a href="/patlib/navigation" title="Navigation">Navigation</a>
+          </li>
+          <li>
+              <a href="/patlib/quotes" title="Quotes">Quotes</a>
+          </li>
+          <li>
+              <a href="/patlib/tables" title="Tables">Tables</a>
+          </li>
+      </ul>
+  </nav>
+
+    <main>
+
+      <h1>Links</h1>
+        <nav aria-label="Secondary">
+          <ul>
+            <li><a href="#priority">Standard</a></li>
+            <li><a href="#disabled">Button</a></li>
+          </ul>
+        </nav>
+
+        <article id="standard" class="button-type">
+          <h3>Standard</h3>
+          <p>Links are neat.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <a class="">Standard</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<a class="standard">Standard Full</a>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
+          </article>
+        </article>
+
+        <article id="disabled" class="button-type">
+          <h3>Button Links</h3>
+          <p>Some links appear as buttons.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <a class="button">Standard</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
+          </article>
+        </article>
+
+  </main>
+
+  <script>
+    setCM();
+  </script>
+
+</body>
+</html>

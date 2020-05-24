@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/components/button.css">
 
+  <script src="/vendor/codemirror/lib/codemirror.js"></script>
+
+  <link rel="stylesheet" href="../../vendor/codemirror/lib/codemirror.css">
+
+  <script src="/vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="/vendor/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+  <script src="/js/patlib.js"></script>
+
 </head>
 <body>
   
@@ -34,16 +44,13 @@
                 <a href="/patlib/buttons" title="Buttons">Buttons</a>
             </li>
             <li>
-                <a href="/patlib/dialogs" title="Dialogs">Dialogs</a>
+                <a href="/patlib/links" title="Links">Links</a>
             </li>
             <li>
                 <a href="/patlib/feedback" title="Feedback">Feedback</a>
             </li>
             <li>
                 <a href="/patlib/forms" title="Form Elements">Form Elements</a>
-            </li>
-            <li>
-                <a href="/patlib/icons" title="Freddicons">Freddicons</a>
             </li>
             <li>
                 <a href="/patlib/helpers" title="Helper Classes">Helper Classes</a>
@@ -55,13 +62,7 @@
                 <a href="/patlib/navigation" title="Navigation">Navigation</a>
             </li>
             <li>
-                <a href="/patlib/slats" title="Slats">Slats</a>
-            </li>
-            <li>
-                <a href="/patlib/stats" title="Stat/Data blocks">Stats/Data</a>
-            </li>
-            <li>
-                <a href="/patlib/tables" title="Tables">Tables</a>
+                <a href="/patlib/quotes" title="Quotes">Quotes</a>
             </li>
         </ul>
     </nav>
@@ -69,7 +70,6 @@
     <main>
 
       <h1>Buttons</h1>
-      <section>
         <nav aria-label="Secondary">
           <ul>
             <li><a href="#priority">Priority</a></li>
@@ -80,11 +80,11 @@
           </ul>
         </nav>
 
-        <article id="priority">
+        <article id="priority" class="button-type">
           <h3>Priority</h3>
           <p>Buttons are categorized by importance and can be applied to a variety of html nodes. Each variation has intention
             and should be used sparingly.</p>
-          <article class="example">
+          <article class="segment">
             <h4>Example</h4>
             <button class="button margin-bottom--lv3">Default</button>
             <button class="button p0 margin-bottom--lv3">Important</button>
@@ -92,22 +92,133 @@
             <button class="button p2 margin-bottom--lv3">Caution</button>
           </article>
           <section>
-            [[[ code mirror here ]]]
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
           </section>
-          <article class="notes">
+          <article class="segment">
+            <h4>Notes</h4>
             <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
             <p>To style an anchor <code>(a)</code> tag as a button use the <code>button</code> class.</p>
             <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
           </article>
         </article>
 
+        <article id="disabled" class="button-type">
+          <h3>Disabled</h3>
+          <p>Buttons are categorized by importance and can be applied to a variety of html nodes. Each variation has intention
+            and should be used sparingly.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <button class="button margin-bottom--lv3">Default</button>
+            <button class="button p0 margin-bottom--lv3">Important</button>
+            <button class="button p1 margin-bottom--lv3">Primary Action</button>
+            <button class="button p2 margin-bottom--lv3">Caution</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
+            <p>To style an anchor <code>(a)</code> tag as a button use the <code>button</code> class.</p>
+            <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
+          </article>
+        </article>
 
+        <article id="pagination" class="button-type">
+          <h3>Pagination</h3>
+          <p>Buttons are categorized by importance and can be applied to a variety of html nodes. Each variation has intention
+            and should be used sparingly.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <button class="button margin-bottom--lv3">Default</button>
+            <button class="button p0 margin-bottom--lv3">Important</button>
+            <button class="button p1 margin-bottom--lv3">Primary Action</button>
+            <button class="button p2 margin-bottom--lv3">Caution</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
+            <p>To style an anchor <code>(a)</code> tag as a button use the <code>button</code> class.</p>
+            <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
+          </article>
+        </article>
 
+        <article id="combo" class="button-type">
+          <h3>Combo</h3>
+          <p>Buttons are categorized by importance and can be applied to a variety of html nodes. Each variation has intention
+            and should be used sparingly.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <button class="button margin-bottom--lv3">Default</button>
+            <button class="button p0 margin-bottom--lv3">Important</button>
+            <button class="button p1 margin-bottom--lv3">Primary Action</button>
+            <button class="button p2 margin-bottom--lv3">Caution</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
+            <p>To style an anchor <code>(a)</code> tag as a button use the <code>button</code> class.</p>
+            <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
+          </article>
+        </article>
 
-
-      </section>
-
+        <article id="group" class="button-type">
+          <h3>Group</h3>
+          <p>Buttons are categorized by importance and can be applied to a variety of html nodes. Each variation has intention
+            and should be used sparingly.</p>
+          <article class="segment">
+            <h4>Example</h4>
+            <button class="button margin-bottom--lv3">Default</button>
+            <button class="button p0 margin-bottom--lv3">Important</button>
+            <button class="button p1 margin-bottom--lv3">Primary Action</button>
+            <button class="button p2 margin-bottom--lv3">Caution</button>
+          </article>
+          <section>
+            <textarea class="sourcecode">
+<button class="standard">Standard Full</button>
+<button class="alternate">Secondary Full</button>
+<button class="rimmed">Standard Rimmed</button>
+<button class="rimmed-alternate">Alternate Rimmed</button>
+            </textarea>
+          </section>
+          <article class="segment">
+            <h4>Notes</h4>
+            <p>You can create buttons using the <code>button</code> HTML tag accompanied by the <code>button</code> class.</p>
+            <p>To style an anchor <code>(a)</code> tag as a button use the <code>button</code> class.</p>
+            <p>To style an <code>input</code> as a button use the <code>button</code> class and define a label by adding a <code>value</code> attribute.</p>
+          </article>
+        </article>
   </main>
+
+  <script>
+    setCM();
+  </script>
 
 </body>
 </html>

@@ -17,6 +17,10 @@
   --brand-tundora: #474747;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-color-white {
   color: var(--brand-white);
 }
@@ -153,6 +157,12 @@ nav[aria-label=Secondary] ul li a {
 }
 nav[aria-label=Secondary] ul li a:hover {
   border-bottom: 4px double #999;
+}
+
+.CodeMirror {
+  height: auto !important;
+  margin: 2em 0;
+  border: 1px solid #dedddc;
 }
 
 /*# sourceMappingURL=pattern-library.css.map */

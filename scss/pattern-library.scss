@@ -89,6 +89,7 @@ nav[aria-label="Primary"] {
 }
 
 nav[aria-label="Secondary"] {
+
   ul {
     list-style-type: none;
     border-bottom: solid 1px #dedddc;
@@ -117,4 +118,10 @@ nav[aria-label="Secondary"] {
       }
     }
   }
+}
+
+.CodeMirror {
+  height: auto !important;
+  margin: 2em 0;  
+  border: 1px solid #dedddc;
 }

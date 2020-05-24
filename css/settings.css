@@ -17,6 +17,10 @@
   --brand-tundora: #474747;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-color-white {
   color: var(--brand-white);
 }

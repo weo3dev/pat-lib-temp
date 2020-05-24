@@ -26,6 +26,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-color-white {
     color: var(--brand-white);
 }
