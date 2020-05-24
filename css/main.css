@@ -335,18 +335,40 @@ main {
   grid-row-gap: 2em;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: sans-serif;
-  font-weight: 500;
-  line-height: 0.8;
-  font-size: 3rem;
+  font-weight: 400;
   text-transform: capitalize;
-  font-variant: small-caps;
   margin: 0;
+}
+
+h1 {
+  font-size: 2.732em;
+  line-height: 0.8;
+  font-variant: small-caps;
   align-self: end;
 }
 
-nav h3 {
+h2 {
+  font-size: 2.351em;
+}
+
+h3 {
+  font-size: 2.016em;
+}
+
+h4 {
+  font-size: 1.571em;
+}
+
+li > a {
+  display: block;
+}
+
+nav[aria-label=Primary] h3 {
   font-size: 1.15rem;
   font-family: sans-serif;
   font-variant: small-caps;
@@ -354,25 +376,48 @@ nav h3 {
   margin: 0;
   align-self: end;
 }
-nav ul {
+nav[aria-label=Primary] ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-nav ul li a {
+nav[aria-label=Primary] ul li a {
   padding: 0.25rem 0.75rem;
   border-radius: 0.2rem;
   text-decoration: none;
   color: var(--patlib-black);
   background: transparent;
-  display: block;
   border-bottom: 4px double transparent;
   margin: 0.25rem 0;
 }
-nav ul li a:hover {
+nav[aria-label=Primary] ul li a:hover {
   border-bottom: 4px double #ddd;
 }
-nav ul li.selected a {
+nav[aria-label=Primary] ul li.selected a {
+  border-bottom: 4px double #999;
+}
+
+nav[aria-label=Secondary] ul {
+  list-style-type: none;
+  border-bottom: solid 1px #dedddc;
+  padding: 0;
+  display: grid;
+  grid-column-gap: 2em;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+  grid-template-rows: 2.5em;
+  align-items: start;
+}
+nav[aria-label=Secondary] ul li a {
+  color: #241c15;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  border-bottom: 4px double transparent;
+}
+nav[aria-label=Secondary] ul li a:hover {
   border-bottom: 4px double #999;
 }
 
