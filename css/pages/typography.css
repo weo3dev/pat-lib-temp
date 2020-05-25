@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap");
+.type-listing.raleway {
+  font-family: "Raleway", sans-serif;
+}
+.type-listing.raleway .super-large {
+  font-size: 5.7em;
+  margin: 0;
+  line-height: 1.2;
+}
+.type-listing p {
+  line-height: 2;
+}
+.type-listing h4 {
+  text-transform: unset;
+  line-height: 1.5;
+}
+.type-listing .fw-200 {
+  font-weight: 200;
+}
+.type-listing .fw-400 {
+  font-weight: 400;
+}
+.type-listing .fw-700 {
+  font-weight: 700;
+}
 
+.type-scale-settings {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2em 0;
+}
+.type-scale-settings h1, .type-scale-settings h2, .type-scale-settings h3, .type-scale-settings h4 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+.type-scale-settings tr {
+  border-bottom: 1px solid #afafaf;
+}
+.type-scale-settings tr td {
+  padding: 1em;
+  width: 25%;
+}
+.type-scale-settings tr td:first-child {
+  width: 50%;
+}
 
 /*# sourceMappingURL=typography.css.map */
