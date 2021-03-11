@@ -2,75 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattern Library :: Introduction</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Library :: Buttons</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components/button.css">
+
+  <script src="/vendor/codemirror/lib/codemirror.js"></script>
+
+  <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css">
+
+  <script src="/vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="/vendor/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+  <script src="/js/patlib.js"></script>
+
 </head>
 
 <body>
 
-    <header>header.</header>
-    <nav aria-label="Primary">
-        <h3>Foundations</h3>
-        <ul>
-            <li class="selected">
-                <a href="/" title="Introduction">Introduction</a>
-            </li>            
-            <li>
-                <a href="/patlib/color" title="Color">Color</a>
-            </li>
-            <li>
-                <a href="/patlib/typography" title="Typography">Typography</a>
-            </li>
-            <li>
-                <a href="/patlib/grid" title="Grid System">Grid System</a>
-            </li>            
-        </ul>
-        <h3>Components</h3>
-        <ul class="regular padding--lv3">
-            <li>
-                <a href="/patlib/buttons" title="Buttons">Buttons</a>
-            </li>
-            <li>
-                <a href="/patlib/links" title="Links">Links</a>
-            </li>
-            <li>
-                <a href="/patlib/feedback" title="Feedback">Feedback</a>
-            </li>
-            <li>
-                <a href="/patlib/forms" title="Form Elements">Form Elements</a>
-            </li>
-            <li>
-                <a href="/patlib/helpers" title="Helper Classes">Helper Classes</a>
-            </li>
-            <li>
-                <a href="/patlib/lists" title="Lists">Lists</a>
-            </li>
-            <li>
-                <a href="/patlib/navigation" title="Navigation">Navigation</a>
-            </li>
-            <li>
-                <a href="/patlib/quotes" title="Quotes">Quotes</a>
-            </li>
-            <li>
-                <a href="/patlib/tables" title="Tables">Tables</a>
-            </li>
-        </ul>
-    </nav>
 
+  <header>header.</header>
 
-    <main>
-        <h1>Organice Headshots Pattern Library</h1>
-        <section>
-            <h1>H1 Header</h1>
-            <h2>H2 Header</h2>
-            <h3>H3 Header</h3>
-            <h4>H4 header</h4>
-            <h5>H5 header</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptate quia. Aliquid assumenda iste molestias nemo corrupti deserunt iusto, ea dolores maiores temporibus eum quas libero expedita facere nulla distinctio.</p>
-        </section>
-    </main>
+  <nav aria-label="Primary">
+    <h3>Foundations</h3>
+    <ul>
+        <li class="selected">
+            <a href="/" title="Introduction">Introduction</a>
+        </li>
+        <li>
+            <a href="/patlib/color" title="Color">Color</a>
+        </li>
+      <li>
+        <a href="/patlib/typography" title="Typography">Typography</a>
+      </li>
+      <li>
+        <a href="/patlib/grid" title="Grid System">Grid System</a>
+      </li>
+    </ul>
+    <h3>Components</h3>
+    <ul>
+      <li>
+        <a href="/patlib/buttons" title="Buttons">Buttons</a>
+      </li>
+      <li>
+        <a href="/patlib/links" title="Links">Links</a>
+      </li>
+      <li>
+        <a href="/patlib/feedback" title="Feedback">Feedback</a>
+      </li>
+      <li>
+        <a href="/patlib/forms" title="Form Elements">Form Elements</a>
+      </li>
+      <li>
+        <a href="/patlib/helpers" title="Helper Classes">Helper Classes</a>
+      </li>
+      <li>
+        <a href="/patlib/lists" title="Lists">Lists</a>
+      </li>
+      <li>
+        <a href="/patlib/navigation" title="Navigation">Navigation</a>
+      </li>
+      <li>
+        <a href="/patlib/quotes" title="Quotes">Quotes</a>
+      </li>
+      <li>
+        <a href="/patlib/tables" title="Tables">Tables</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <h1>Introduction</h1>
+
+    <section>
+      <h3>Our brand on the web</h3>
+      <p>This pattern library holds the building blocks of [<i>your name here</i>>] -- our website and our app. Centralizing these React components and CSS utilities helps us forge a consistent user experience that is always up to date with our latest brand guidelines.</p>
+    </section>
+  
+    <section>
+      <h4>Guidelines</h4>
+      <p>These visual guidelines form a harmonious visual system where we can not only be modular but extremely thoughtful as to how we use each component.</p>
+      <ul>
+        <li><a href="/typography">Typography</a></li>
+        <li><a href="/color">Color</a></li>
+  
+        <li><a href="/layouts">Layouts</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Components</h4>
+      <p>Explore each of the many components used to build our app, along with the design principles we use to construct them.</p>
+      <ul>
+        <li><a href="/buttons">Buttons</a></li>
+        <li><a href="/links">Links</a></li>
+        <li><a href="/tables">Tables</a></li>
+        <li><a href="#">linky to a component</a></li>
+        <li><a href="#">linky to a component</a></li>
+      </ul>
+    </section>
+  
+
+    <section>
+      <h4>Utilities</h4>
+      <p>Beyond the components themselves, we use a variety of CSS and JS utilities. These enable us to position, space, or otherwise visually present the components in the way they’re intended to within a given flow or layout.</p>  
+    </section>
+   
+  </main>
 
 </body>
 

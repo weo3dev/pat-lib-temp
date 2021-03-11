@@ -237,22 +237,29 @@ summary {
 
 /*# sourceMappingURL=weo3-mn.css.map */
 :root {
-  --standard-white: #fff;
-  --standard-black: #000;
+  --full-white: #fff;
+  --full-black: #000;
   --patlib-black: #343434;
   --patlib-white: #fafafa;
   --patlib-primary: #369;
   --patlib-highlight: #DEF;
   --patlib-higherlight: #EFF;
-  --brand-white: #fefefe;
-  --brand-black: #232323;
-  --brand-primary: #2FBF8E;
-  --brand-secondary: #3AE2AA;
-  --brand-magicmint: #AFF1DA;
-  --brand-gossip: #DEF9BA;
-  --brand-pearl: #F6F6F6;
-  --brand-silver: #C4C4C4;
-  --brand-tundora: #474747;
+  --brand-blue: #2E91D0;
+  --brand-green: #94C943;
+  --brand-orange: #F99C1E;
+  --brand-black: #505050;
+  --brand-white: #F8F8F8;
+  --tresbu-aqua: #1DC9CF;
+  --tresbu-sky: #6EC1E4;
+  --tresbu-twilight: #4054B2;
+  --tresbu-clover: #23A455;
+  --tresbu-lime: #61CE70;
+  --tresbu-lightgrey: #E1DDDD;
+  --tresbu-midgrey: #7A7A7A;
+  --tresbu-darkgrey: #54595F;
+  --tresbu-midnight: #405169;
+  --tresbu-offwhite: #FDFAFA;
+  --tresbu-offblack: #020101;
 }
 
 html {
@@ -272,43 +279,43 @@ html {
 }
 
 .text-color-secondary {
-  color: var(--brand-secondary);
+  color: var(--brand-green);
 }
 
-.text-color-primary {
-  color: var(--brand-primary);
-}
-
-.text-color-primary {
-  color: var(--brand-primary);
+.text-color-tertiary {
+  color: var(--brand-orange);
 }
 
 .bg-color-primary {
-  background-color: var(--brand-primary);
+  background-color: var(--brand-blue);
 }
 
 .bg-color-secondary {
-  background-color: var(--brand-secondary);
+  background-color: var(--brand-green);
 }
 
-.bg-color-magicmint {
-  background-color: var(--brand-magicmint);
+.bg-color-tertiary {
+  background-color: var(--brand-orange);
 }
 
-.bg-color-gossip {
-  background-color: var(--brand-gossip);
+.bg-color-aqua {
+  background-color: var(--tresbu-aqua);
 }
 
-.bg-color-pearl {
-  background-color: var(--brand-pearl);
+.bg-color-sky {
+  background-color: var(--tresbu-sky);
 }
 
-.bg-color-silver {
-  background-color: var(--brand-silver);
+.bg-color-twilight {
+  background-color: var(--tresbu-twilight);
 }
 
-.bg-color-tundora {
-  background-color: var(--brand-tundora);
+.bg-color-clover {
+  background-color: var(--tresbu-clover);
+}
+
+.bg-color-lime {
+  background-color: var(--tresbu-lime);
 }
 
 body {
@@ -316,20 +323,21 @@ body {
   grid-template-columns: 1fr minmax(min-content, 200px) minmax(300px, 840px) 1fr;
   grid-template-areas: "hd hd hd hd" "... nv mn ...";
   grid-template-rows: min-content;
-  grid-column-gap: 2rem;
+  background-color: var(--patlib-white);
 }
 
 header {
   grid-area: hd;
   padding: 1em;
   box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2em;
 }
 
 nav[aria-label=Primary] {
   grid-area: nv;
   display: grid;
   grid-template-rows: repeat(2, 4em min-content);
+  padding-left: 0.5rem;
+  background-color: var(--tresbu-lightgrey);
 }
 
 main {
@@ -337,6 +345,7 @@ main {
   display: grid;
   grid-template-rows: 4em 1fr;
   grid-row-gap: 4em;
+  padding-left: 2rem;
 }
 
 h1,
@@ -387,18 +396,17 @@ nav[aria-label=Primary] ul {
 }
 nav[aria-label=Primary] ul li a {
   padding: 0.25rem 0.75rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   text-decoration: none;
   color: var(--patlib-black);
-  background: transparent;
-  border-bottom: 4px double transparent;
+  background-color: transparent;
   margin: 0.25rem 0;
 }
 nav[aria-label=Primary] ul li a:hover {
-  border-bottom: 4px double #ddd;
+  background-color: var(--patlib-white);
 }
 nav[aria-label=Primary] ul li.selected a {
-  border-bottom: 4px double #999;
+  background-color: var(--patlib-white);
 }
 
 nav[aria-label=Secondary] ul {
@@ -423,6 +431,22 @@ nav[aria-label=Secondary] ul li a {
 }
 nav[aria-label=Secondary] ul li a:hover {
   border-bottom: 4px double #999;
+}
+
+.glyphs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 31px);
+  grid-template-rows: repeat(auto-fill, 33px);
+}
+.glyphs-grid span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 32px;
+  outline: 1px solid #dadada;
+  margin-left: -1px;
+  margin-top: 1px;
 }
 
 .CodeMirror {

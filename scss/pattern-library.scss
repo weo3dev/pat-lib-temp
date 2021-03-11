@@ -53,35 +53,21 @@ nav[aria-label="Primary"] {
     li {
 
       a {
-        // padding: 0.75rem;
-        // border-radius: 0.2rem;
-        // text-decoration: none;
-        // color: var(--patlib-black);
-        // background: transparent;
-        // display: block;
-
-        // &:hover {
-        //   background: var(--patlib-higherlight);
-        // }
         padding: 0.25rem 0.75rem;
-        border-radius: 0.2rem;
+        border-radius: 0.5rem 0 0 0.5rem;
         text-decoration: none;
         color: var(--patlib-black);
-        background: transparent;
-        border-bottom: 4px double transparent;
+        background-color: transparent;
         margin: 0.25rem 0;
 
         &:hover {
-          border-bottom: 4px double #ddd;
+          background-color: var(--patlib-white);
         }
       }
 
       &.selected {
-        // a {
-        //   background: var(--patlib-highlight);
-        // }
         a {
-          border-bottom: 4px double #999;
+          background-color: var(--patlib-white);
         }
       }
     }
@@ -117,6 +103,24 @@ nav[aria-label="Secondary"] {
         }
       }
     }
+  }
+}
+
+
+.glyphs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 31px);
+  grid-template-rows: repeat(auto-fill, 33px);
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 32px;
+    outline: 1px solid #dadada;
+    margin-left: -1px;
+    margin-top: 1px;
   }
 }
 

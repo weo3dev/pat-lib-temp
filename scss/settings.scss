@@ -1,7 +1,7 @@
 :root {
 
-    --standard-white: #fff;
-    --standard-black: #000;
+    --full-white: #fff;
+    --full-black: #000;
 
     --patlib-black: #343434;
     --patlib-white: #fafafa;
@@ -10,20 +10,30 @@
     --patlib-highlight: #DEF;
     --patlib-higherlight: #EFF;
 
-    --brand-white: #fefefe; // coconut
-    --brand-black: #232323; // eerie black
-
-    --brand-primary: #2FBF8E; // mountain meadow
-    --brand-secondary: #3AE2AA; // eucalyptus
-
-    --brand-magicmint: #AFF1DA; // magic mint
-    --brand-gossip: #DEF9BA; // gossip
-
-    --brand-pearl: #F6F6F6; // pearl
-    --brand-silver: #C4C4C4; // silver
-    --brand-tundora: #474747; // tundora
-
+    --brand-blue: #2E91D0; // curious blue
+    --brand-green: #94C943; // atlantis
+    --brand-orange: #F99C1E; // carrot
     
+    --brand-black: #505050; // matterhorn
+    --brand-white: #F8F8F8; // white smoke
+
+    --tresbu-aqua: #1DC9CF; // robin egg
+    --tresbu-sky: #6EC1E4; // malibu
+    --tresbu-twilight: #4054B2; // free speech
+
+    --tresbu-clover: #23A455; // eucalyptus
+    --tresbu-lime: #61CE70; // fern
+    
+    --tresbu-lightgrey: #E1DDDD; // gainsboro
+    --tresbu-midgrey: #7A7A7A; // grey
+    --tresbu-darkgrey: #54595F; // bright grey
+    --tresbu-midnight: #405169; // east bay
+    
+    // --e-global-color-ed006ba: #94CB43;
+
+    --tresbu-offwhite: #FDFAFA; // snow
+    --tresbu-offblack: #020101; // night rider
+
 }
 
 html {
@@ -43,43 +53,43 @@ html {
 }
 
 .text-color-secondary {
-    color: var(--brand-secondary);
+    color: var(--brand-green);
 }
 
-
-
-.text-color-primary {
-    color: var(--brand-primary);
-}
-
-.text-color-primary {
-    color: var(--brand-primary);
+.text-color-tertiary {
+    color: var(--brand-orange);
 }
 
 .bg-color-primary {
-    background-color: var(--brand-primary);
+    background-color: var(--brand-blue);
 }
 
 .bg-color-secondary {
-    background-color: var(--brand-secondary);
+    background-color: var(--brand-green);
 }
 
-.bg-color-magicmint {
-    background-color: var(--brand-magicmint);
+.bg-color-tertiary {
+    background-color: var(--brand-orange);
 }
 
-.bg-color-gossip {
-    background-color: var(--brand-gossip);
+.bg-color-aqua {
+    background-color: var(--tresbu-aqua);
 }
 
-.bg-color-pearl {
-    background-color: var(--brand-pearl);
+.bg-color-sky {
+    background-color: var(--tresbu-sky);
 }
 
-.bg-color-silver {
-    background-color: var(--brand-silver);
+.bg-color-twilight {
+    background-color: var(--tresbu-twilight);
 }
 
-.bg-color-tundora {
-    background-color: var(--brand-tundora);
+.bg-color-clover {
+    background-color: var(--tresbu-clover);
 }
+
+
+.bg-color-lime {
+    background-color: var(--tresbu-lime);
+}
+

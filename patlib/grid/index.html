@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pattern Library :: Grid System</title>
   <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="../../css/components/settings.css">
+  <!-- <link rel="stylesheet" href="../../css/components/settings.css"> -->
+
+  <script src="/vendor/codemirror/lib/codemirror.js"></script>
+
+  <link rel="stylesheet" href="../../vendor/codemirror/lib/codemirror.css">
+
+  <script src="/vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="/vendor/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+  <script src="/js/patlib.js"></script>
 
 </head>
+
 <body>
 
   <header>header.</header>
@@ -53,6 +65,9 @@
           <li>
               <a href="/patlib/quotes" title="Quotes">Quotes</a>
           </li>
+          <li>
+            <a href="/patlib/tables" title="Tables">Tables</a>
+          </li>          
       </ul>
   </nav>  
   
@@ -93,18 +108,14 @@
       </article>
       
       <article class="segment">
-          her her her her her
-      </article>
-      
-      <article class="segment">
-          her her her her her
-      </article>
-      
-      <article class="segment">
-          her her her her her
+         grid grid grid
       </article>
 
   </main>
+
+  <script>
+    setCM();
+  </script>
 
   
 </body>
